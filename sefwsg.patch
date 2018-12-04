@@ -1,0 +1,315 @@
+Index: gfgfgfg/.mvn/wrapper/maven-wrapper.properties
+===================================================================
+--- gfgfgfg/.mvn/wrapper/maven-wrapper.properties	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
++++ gfgfgfg/.mvn/wrapper/maven-wrapper.properties	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
+@@ -1,1 +0,0 @@
+-distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.5.4/apache-maven-3.5.4-bin.zip
+Index: gfgfgfg/src/main/java/com/example/GfgfgfgApplication.java
+===================================================================
+--- gfgfgfg/src/main/java/com/example/GfgfgfgApplication.java	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
++++ gfgfgfg/src/main/java/com/example/GfgfgfgApplication.java	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
+@@ -1,12 +0,0 @@
+-package com.example;
+-
+-import org.springframework.boot.SpringApplication;
+-import org.springframework.boot.autoconfigure.SpringBootApplication;
+-
+-@SpringBootApplication
+-public class GfgfgfgApplication {
+-
+-	public static void main(String[] args) {
+-		SpringApplication.run(GfgfgfgApplication.class, args);
+-	}
+-}
+Index: gfgfgfg/src/main/resources/application.properties
+===================================================================
+--- gfgfgfg/src/main/resources/application.properties	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
++++ gfgfgfg/src/main/resources/application.properties	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
+@@ -1,0 +0,0 @@
+Index: gfgfgfg/src/test/java/com/example/GfgfgfgApplicationTests.java
+===================================================================
+--- gfgfgfg/src/test/java/com/example/GfgfgfgApplicationTests.java	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
++++ gfgfgfg/src/test/java/com/example/GfgfgfgApplicationTests.java	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
+@@ -1,16 +0,0 @@
+-package com.example;
+-
+-import org.junit.Test;
+-import org.junit.runner.RunWith;
+-import org.springframework.boot.test.context.SpringBootTest;
+-import org.springframework.test.context.junit4.SpringRunner;
+-
+-@RunWith(SpringRunner.class)
+-@SpringBootTest
+-public class GfgfgfgApplicationTests {
+-
+-	@Test
+-	public void contextLoads() {
+-	}
+-
+-}
+Index: gfgfgfg/.gitignore
+===================================================================
+--- gfgfgfg/.gitignore	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
++++ gfgfgfg/.gitignore	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
+@@ -1,25 +0,0 @@
+-/target/
+-!.mvn/wrapper/maven-wrapper.jar
+-
+-### STS ###
+-.apt_generated
+-.classpath
+-.factorypath
+-.project
+-.settings
+-.springBeans
+-.sts4-cache
+-
+-### IntelliJ IDEA ###
+-.idea
+-*.iws
+-*.iml
+-*.ipr
+-
+-### NetBeans ###
+-/nbproject/private/
+-/build/
+-/nbbuild/
+-/dist/
+-/nbdist/
+-/.nb-gradle/
+\ No newline at end of file
+Index: gfgfgfg/mvnw.cmd
+===================================================================
+--- gfgfgfg/mvnw.cmd	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
++++ gfgfgfg/mvnw.cmd	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
+@@ -1,161 +0,0 @@
+-@REM ----------------------------------------------------------------------------
+-@REM Licensed to the Apache Software Foundation (ASF) under one
+-@REM or more contributor license agreements.  See the NOTICE file
+-@REM distributed with this work for additional information
+-@REM regarding copyright ownership.  The ASF licenses this file
+-@REM to you under the Apache License, Version 2.0 (the
+-@REM "License"); you may not use this file except in compliance
+-@REM with the License.  You may obtain a copy of the License at
+-@REM
+-@REM    http://www.apache.org/licenses/LICENSE-2.0
+-@REM
+-@REM Unless required by applicable law or agreed to in writing,
+-@REM software distributed under the License is distributed on an
+-@REM "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+-@REM KIND, either express or implied.  See the License for the
+-@REM specific language governing permissions and limitations
+-@REM under the License.
+-@REM ----------------------------------------------------------------------------
+-
+-@REM ----------------------------------------------------------------------------
+-@REM Maven2 Start Up Batch script
+-@REM
+-@REM Required ENV vars:
+-@REM JAVA_HOME - location of a JDK home dir
+-@REM
+-@REM Optional ENV vars
+-@REM M2_HOME - location of maven2's installed home dir
+-@REM MAVEN_BATCH_ECHO - set to 'on' to enable the echoing of the batch commands
+-@REM MAVEN_BATCH_PAUSE - set to 'on' to wait for a key stroke before ending
+-@REM MAVEN_OPTS - parameters passed to the Java VM when running Maven
+-@REM     e.g. to debug Maven itself, use
+-@REM set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
+-@REM MAVEN_SKIP_RC - flag to disable loading of mavenrc files
+-@REM ----------------------------------------------------------------------------
+-
+-@REM Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on'
+-@echo off
+-@REM set title of command window
+-title %0
+-@REM enable echoing my setting MAVEN_BATCH_ECHO to 'on'
+-@if "%MAVEN_BATCH_ECHO%" == "on"  echo %MAVEN_BATCH_ECHO%
+-
+-@REM set %HOME% to equivalent of $HOME
+-if "%HOME%" == "" (set "HOME=%HOMEDRIVE%%HOMEPATH%")
+-
+-@REM Execute a user defined script before this one
+-if not "%MAVEN_SKIP_RC%" == "" goto skipRcPre
+-@REM check for pre script, once with legacy .bat ending and once with .cmd ending
+-if exist "%HOME%\mavenrc_pre.bat" call "%HOME%\mavenrc_pre.bat"
+-if exist "%HOME%\mavenrc_pre.cmd" call "%HOME%\mavenrc_pre.cmd"
+-:skipRcPre
+-
+-@setlocal
+-
+-set ERROR_CODE=0
+-
+-@REM To isolate internal variables from possible post scripts, we use another setlocal
+-@setlocal
+-
+-@REM ==== START VALIDATION ====
+-if not "%JAVA_HOME%" == "" goto OkJHome
+-
+-echo.
+-echo Error: JAVA_HOME not found in your environment. >&2
+-echo Please set the JAVA_HOME variable in your environment to match the >&2
+-echo location of your Java installation. >&2
+-echo.
+-goto error
+-
+-:OkJHome
+-if exist "%JAVA_HOME%\bin\java.exe" goto init
+-
+-echo.
+-echo Error: JAVA_HOME is set to an invalid directory. >&2
+-echo JAVA_HOME = "%JAVA_HOME%" >&2
+-echo Please set the JAVA_HOME variable in your environment to match the >&2
+-echo location of your Java installation. >&2
+-echo.
+-goto error
+-
+-@REM ==== END VALIDATION ====
+-
+-:init
+-
+-@REM Find the project base dir, i.e. the directory that contains the folder ".mvn".
+-@REM Fallback to current working directory if not found.
+-
+-set MAVEN_PROJECTBASEDIR=%MAVEN_BASEDIR%
+-IF NOT "%MAVEN_PROJECTBASEDIR%"=="" goto endDetectBaseDir
+-
+-set EXEC_DIR=%CD%
+-set WDIR=%EXEC_DIR%
+-:findBaseDir
+-IF EXIST "%WDIR%"\.mvn goto baseDirFound
+-cd ..
+-IF "%WDIR%"=="%CD%" goto baseDirNotFound
+-set WDIR=%CD%
+-goto findBaseDir
+-
+-:baseDirFound
+-set MAVEN_PROJECTBASEDIR=%WDIR%
+-cd "%EXEC_DIR%"
+-goto endDetectBaseDir
+-
+-:baseDirNotFound
+-set MAVEN_PROJECTBASEDIR=%EXEC_DIR%
+-cd "%EXEC_DIR%"
+-
+-:endDetectBaseDir
+-
+-IF NOT EXIST "%MAVEN_PROJECTBASEDIR%\.mvn\jvm.config" goto endReadAdditionalConfig
+-
+-@setlocal EnableExtensions EnableDelayedExpansion
+-for /F "usebackq delims=" %%a in ("%MAVEN_PROJECTBASEDIR%\.mvn\jvm.config") do set JVM_CONFIG_MAVEN_PROPS=!JVM_CONFIG_MAVEN_PROPS! %%a
+-@endlocal & set JVM_CONFIG_MAVEN_PROPS=%JVM_CONFIG_MAVEN_PROPS%
+-
+-:endReadAdditionalConfig
+-
+-SET MAVEN_JAVA_EXE="%JAVA_HOME%\bin\java.exe"
+-set WRAPPER_JAR="%MAVEN_PROJECTBASEDIR%\.mvn\wrapper\maven-wrapper.jar"
+-set WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
+-
+-set DOWNLOAD_URL="https://repo.maven.apache.org/maven2/io/takari/maven-wrapper/0.4.2/maven-wrapper-0.4.2.jar"
+-FOR /F "tokens=1,2 delims==" %%A IN (%MAVEN_PROJECTBASEDIR%\.mvn\wrapper\maven-wrapper.properties) DO (
+-	IF "%%A"=="wrapperUrl" SET DOWNLOAD_URL=%%B 
+-)
+-
+-@REM Extension to allow automatically downloading the maven-wrapper.jar from Maven-central
+-@REM This allows using the maven wrapper in projects that prohibit checking in binary data.
+-if exist %WRAPPER_JAR% (
+-    echo Found %WRAPPER_JAR%
+-) else (
+-    echo Couldn't find %WRAPPER_JAR%, downloading it ...
+-	echo Downloading from: %DOWNLOAD_URL%
+-    powershell -Command "(New-Object Net.WebClient).DownloadFile('%DOWNLOAD_URL%', '%WRAPPER_JAR%')"
+-    echo Finished downloading %WRAPPER_JAR%
+-)
+-@REM End of extension
+-
+-%MAVEN_JAVA_EXE% %JVM_CONFIG_MAVEN_PROPS% %MAVEN_OPTS% %MAVEN_DEBUG_OPTS% -classpath %WRAPPER_JAR% "-Dmaven.multiModuleProjectDirectory=%MAVEN_PROJECTBASEDIR%" %WRAPPER_LAUNCHER% %MAVEN_CONFIG% %*
+-if ERRORLEVEL 1 goto error
+-goto end
+-
+-:error
+-set ERROR_CODE=1
+-
+-:end
+-@endlocal & set ERROR_CODE=%ERROR_CODE%
+-
+-if not "%MAVEN_SKIP_RC%" == "" goto skipRcPost
+-@REM check for post script, once with legacy .bat ending and once with .cmd ending
+-if exist "%HOME%\mavenrc_post.bat" call "%HOME%\mavenrc_post.bat"
+-if exist "%HOME%\mavenrc_post.cmd" call "%HOME%\mavenrc_post.cmd"
+-:skipRcPost
+-
+-@REM pause the script if MAVEN_BATCH_PAUSE is set to 'on'
+-if "%MAVEN_BATCH_PAUSE%" == "on" pause
+-
+-if "%MAVEN_TERMINATE_CMD%" == "on" exit %ERROR_CODE%
+-
+-exit /B %ERROR_CODE%
+Index: gfgfgfg/pom.xml
+===================================================================
+--- gfgfgfg/pom.xml	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
++++ gfgfgfg/pom.xml	(revision 7e48fc7c78c3591fbba4b7bdb17d19d2658cef63)
+@@ -1,50 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+-	<modelVersion>4.0.0</modelVersion>
+-
+-	<groupId>com.example</groupId>
+-	<artifactId>gfgfgfg</artifactId>
+-	<version>0.0.1-SNAPSHOT</version>
+-	<packaging>jar</packaging>
+-
+-	<name>gfgfgfg</name>
+-	<description>Demo project for Spring Boot</description>
+-
+-	<parent>
+-		<groupId>org.springframework.boot</groupId>
+-		<artifactId>spring-boot-starter-parent</artifactId>
+-		<version>2.1.1.RELEASE</version>
+-		<relativePath/> <!-- lookup parent from repository -->
+-	</parent>
+-
+-	<properties>
+-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+-		<java.version>1.8</java.version>
+-	</properties>
+-
+-	<dependencies>
+-		<dependency>
+-			<groupId>org.springframework.boot</groupId>
+-			<artifactId>spring-boot-starter</artifactId>
+-		</dependency>
+-
+-		<dependency>
+-			<groupId>org.springframework.boot</groupId>
+-			<artifactId>spring-boot-starter-test</artifactId>
+-			<scope>test</scope>
+-		</dependency>
+-	</dependencies>
+-
+-	<build>
+-		<plugins>
+-			<plugin>
+-				<groupId>org.springframework.boot</groupId>
+-				<artifactId>spring-boot-maven-plugin</artifactId>
+-			</plugin>
+-		</plugins>
+-	</build>
+-
+-
+-</project>
+diff --git gfgfgfg/.mvn/wrapper/maven-wrapper.jar gfgfgfg/.mvn/wrapper/maven-wrapper.jar
+deleted file mode 100644
+index 01e67997377a393fd672c7dcde9dccbedf0cb1e9..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git gfgfgfg/mvnw gfgfgfg/mvnw
+deleted file mode 100644
+index 5551fde8e7dba1e37a1821e8b26374893e2a9e2e..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
