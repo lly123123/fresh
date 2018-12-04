@@ -6,8 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
-        <module name="demo2" />
         <module name="springcloud-client" />
         <module name="springcloud-feign" />
         <module name="springcloud-server" />
