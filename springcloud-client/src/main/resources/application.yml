@@ -1,0 +1,14 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8090/eureka/
+server:
+    port: 8089
+spring:
+    application:
+        name: service-client
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: root
+        url: jdbc:mysql://192.168.31.200/1804b?useUnicode=true&characterEncoding=utf-8
+        username: root

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fresh.iml" filepath="$PROJECT_DIR$/fresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-api/spring-cloud-api.iml" filepath="$PROJECT_DIR$/springcloud-api/spring-cloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/springMVC/springMVC.iml" filepath="$PROJECT_DIR$/springMVC/springMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-api/springcloud-api.iml" filepath="$PROJECT_DIR$/springcloud-api/springcloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-client/springcloud-client.iml" filepath="$PROJECT_DIR$/springcloud-client/springcloud-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-feign/springcloud-feign.iml" filepath="$PROJECT_DIR$/springcloud-feign/springcloud-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-server/springcloud-server.iml" filepath="$PROJECT_DIR$/springcloud-server/springcloud-server.iml" />

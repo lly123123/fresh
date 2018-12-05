@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-api" />
+        <module name="springcloud-api" />
         <module name="springcloud-client" />
         <module name="springcloud-feign" />
         <module name="springcloud-server" />
@@ -18,6 +20,8 @@
       <module name="demo2" target="1.8" />
       <module name="fafa" target="1.8" />
       <module name="fresh" target="1.5" />
+      <module name="spring-cloud-api" target="1.5" />
+      <module name="springcloud-api" target="1.5" />
       <module name="springcloud-client" target="1.8" />
       <module name="springcloud-feign" target="1.8" />
       <module name="springcloud-server" target="1.8" />
