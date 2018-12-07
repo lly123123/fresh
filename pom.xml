@@ -10,6 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springMVC</module>
+        <module>spring-dyl-client</module>
+        <module>spring-dyl-feign</module>
+        <module>springcloud-api</module>
+        <module>springcloud-server</module>
     </modules>
 
 

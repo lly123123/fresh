@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jk.mapper.AdvertMapper">
+
+    <select id="queryAdvertisementCount" resultType="long">
+        select count(*) from t_advertisement
+    </select>
+
+    <select id="queryAdvertisementList" resultType="com.jk.model.Advertisement">
+        select * from  t_advertisement limit #{start},#{pageSize}
+    </select>
+
+    <select id="queryAdvertPlaceCount" resultType="long">
+        select count(*) from t_advertPlace
+    </select>
+
+    <select id="queryAdvertPlaceList" resultType="com.jk.model.AdvertPlace">
+        select * from  t_advertPlace limit #{start},#{pageSize}
+    </select>
+
+</mapper>
